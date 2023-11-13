@@ -113,6 +113,35 @@ namespace APIReservify.Controllers
             }
         }
 
+        [HttpPut]
+        [Route("editarNegocio/{id}")]
+        public IActionResult EditarNegocio([FromBody] Negocio _negocio)
+        {
+            var negocio = _dbcontext.Negocios.Find(_negocio.IdNegocio);
+            if (negocio == null)
+                return BadRequest("Negocio no encontrado");
+            try
+            {
+                negocio.Categoria = _negocio.Categoria;
+                negocio.Nombre = _negocio.Nombre;
+                negocio.Direccion = negocio.Direccion;
+                negocio.HoraCierre = _negocio.HoraCierre;
+                negocio.HoraApertura = _negocio.HoraApertura;
+                negocio.Descripcion = _negocio.Descripcion;
+
+                _dbcontext.Negocios.Update(negocio);
+                _dbcontext.SaveChanges();
+
+                return StatusCode(StatusCodes.Status200OK, new { mensaje = "okay" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status200OK, new { mensaje = ex.Message });
+            }
+        }
+
+
+
 
     }
 }

@@ -6,7 +6,7 @@ namespace APIReservify.Services
     public interface ICitaService
     {
         List<Citas> Get();
-        List<Citas> GetCitasNegocio(int id);
+        List<CitasNegocio> GetCitasNegocio(int id);
         List<CitasUsuario> GetCitasUsuario(int id);
         Citas Get(string id);
         Citas Create(Citas cita);

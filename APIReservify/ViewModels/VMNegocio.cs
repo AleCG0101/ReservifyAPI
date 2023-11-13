@@ -40,5 +40,20 @@ namespace APIReservify.ViewModels
             public int Id_usuario { get; set; }
         }
 
+        public partial class CitasNegocio
+        {
+            public string Id { get; set; } = String.Empty;
+
+            public string Fecha { get; set; } = String.Empty;
+
+            public string Hora { get; set; } = String.Empty;
+
+            public int Id_negocio { get; set; }
+
+            public string? NombreUsuario { get; set; } = String.Empty;
+
+            public int Id_usuario { get; set; }
+        }
+
     }
 }

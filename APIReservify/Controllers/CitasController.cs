@@ -27,7 +27,7 @@ namespace APIReservify.Controllers
         // GET: api/<CitasController>/GetCitasNegocio/2       
         [HttpGet]
         [Route("GetCitasNegocio/{id}")]
-        public ActionResult<List<Citas>> GetCitasNegocio(int id)
+        public ActionResult<List<CitasNegocio>> GetCitasNegocio(int id)
         {
             return citaService.GetCitasNegocio(id);
         }
