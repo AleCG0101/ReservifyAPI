@@ -1,6 +1,7 @@
 ﻿using APIReservify.Models;
 using APIReservify.Services;
 using Microsoft.AspNetCore.Mvc;
+using static APIReservify.ViewModels.VMNegocio;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -33,9 +34,17 @@ namespace APIReservify.Controllers
 
         [HttpGet]
         [Route("GetCitasUsuario/{id}")]
-        public ActionResult<List<Citas>> GetCitasUsuario(int id)
+        public ActionResult<List<CitasUsuario>> GetCitasUsuario(int id)
         {
-            return citaService.GetCitasUsuario(id);
+            try
+            {
+                return citaService.GetCitasUsuario(id);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status200OK, new { mensaje = ex.Message });
+            }
+
         }
 
         // GET api/<CitasController>/5

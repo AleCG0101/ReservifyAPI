@@ -1,17 +1,21 @@
-﻿using APIReservify.Models;
+﻿using APIReservify.Controllers;
+using APIReservify.Models;
 using MongoDB.Driver;
+using static APIReservify.ViewModels.VMNegocio;
 
 namespace APIReservify.Services
 {
     public class CitaService : ICitaService
     {
         private readonly IMongoCollection<Citas> _citas;
+        private readonly ReservifyContext _dbcontext;
 
-        public CitaService(ICitasStoreDataBaseSettings settings)
+        public CitaService(ICitasStoreDataBaseSettings settings, ReservifyContext _context)
         {
             var mongoClient = new MongoClient(settings.ConnectionString);
             var database = mongoClient.GetDatabase(settings.DatabaseName);
             _citas = database.GetCollection<Citas>(settings.ReservifyCitasCollectionName);
+            _dbcontext = _context;
         }
         public Citas Create(Citas cita)
         {
@@ -26,9 +30,43 @@ namespace APIReservify.Services
         {
             return _citas.Find(cita => cita.Id_negocio == id).ToList();
         }
-        public List<Citas> GetCitasUsuario(int id)
+        public List<CitasUsuario> GetCitasUsuario(int id)
         {
-            return _citas.Find(cita => cita.Id_usuario == id).ToList();
+            try
+            {
+                List<CitasUsuario> citasUsuario = new List<CitasUsuario>();
+                
+                var citas = _citas.Find(cita => cita.Id_usuario == id).ToList();
+                foreach (var cita in citas)
+                {
+                    var negocio = _dbcontext.Negocios.Find(cita.Id_negocio);
+                    var citaUsuario = new CitasUsuario
+                    {
+                        Id = cita.Id,
+                        Fecha = cita.Fecha,
+                        Hora = cita.Hora,
+                        Id_negocio = cita.Id_negocio,
+                        Id_usuario = cita.Id_usuario,
+
+                    };
+                    if (negocio != null)
+                    {
+                        citaUsuario.NombreNegocio = negocio.Nombre;
+                        citaUsuario.DireccionNegocio = negocio.Direccion;
+                        citaUsuario.CategoriaNegocio = negocio.Categoria;                       
+                    }
+
+                    citasUsuario.Add(citaUsuario);
+                }
+
+                return citasUsuario;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
         }
         public Citas Get(string id)
         {
