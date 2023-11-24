@@ -97,6 +97,7 @@ namespace APIReservify.Controllers
                 newNegocio.Direccion = negocio.Direccion;
                 newNegocio.HoraApertura = negocio.HoraApertura;
                 newNegocio.HoraCierre = negocio.HoraCierre;
+                newNegocio.Foto = string.IsNullOrEmpty(negocio.Foto) ? "" : negocio.Foto;
 
                 _dbcontext.Add(newNegocio);
                 _dbcontext.SaveChanges();
@@ -128,6 +129,7 @@ namespace APIReservify.Controllers
                 negocio.HoraCierre = _negocio.HoraCierre;
                 negocio.HoraApertura = _negocio.HoraApertura;
                 negocio.Descripcion = _negocio.Descripcion;
+                negocio.Foto = string.IsNullOrEmpty(_negocio.Foto) ? negocio.Foto : _negocio.Foto;
 
                 _dbcontext.Negocios.Update(negocio);
                 _dbcontext.SaveChanges();

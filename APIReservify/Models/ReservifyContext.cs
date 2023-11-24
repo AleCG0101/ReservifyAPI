@@ -57,6 +57,10 @@ public partial class ReservifyContext : DbContext
                 .HasMaxLength(250)
                 .IsUnicode(false)
                 .HasColumnName("nombre");
+            entity.Property(e => e.Foto)
+                .HasMaxLength(250)
+                .IsUnicode(false)
+                .HasColumnName("foto");
         });
 
         modelBuilder.Entity<Usuario>(entity =>

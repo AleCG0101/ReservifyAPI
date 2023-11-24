@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aleca\\source\\repos\\APIReservify\\APIReservify\\APIReservify.csproj": {}
+    "C:\\Users\\aleja\\OneDrive\\Documentos\\GitHub\\ReservifyAPI\\APIReservify\\APIReservify.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aleca\\source\\repos\\APIReservify\\APIReservify\\APIReservify.csproj": {
+    "C:\\Users\\aleja\\OneDrive\\Documentos\\GitHub\\ReservifyAPI\\APIReservify\\APIReservify.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aleca\\source\\repos\\APIReservify\\APIReservify\\APIReservify.csproj",
+        "projectUniqueName": "C:\\Users\\aleja\\OneDrive\\Documentos\\GitHub\\ReservifyAPI\\APIReservify\\APIReservify.csproj",
         "projectName": "APIReservify",
-        "projectPath": "C:\\Users\\aleca\\source\\repos\\APIReservify\\APIReservify\\APIReservify.csproj",
-        "packagesPath": "C:\\Users\\aleca\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aleca\\source\\repos\\APIReservify\\APIReservify\\obj\\",
+        "projectPath": "C:\\Users\\aleja\\OneDrive\\Documentos\\GitHub\\ReservifyAPI\\APIReservify\\APIReservify.csproj",
+        "packagesPath": "C:\\Users\\aleja\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aleja\\OneDrive\\Documentos\\GitHub\\ReservifyAPI\\APIReservify\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\aleca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aleja\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

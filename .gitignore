@@ -263,3 +263,8 @@ __pycache__/
 #adicionales
 documentos/
 upload/
+*.dll
+*.pdb
+*.v2
+*.vsidx
+*.dll

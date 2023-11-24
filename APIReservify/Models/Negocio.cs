@@ -18,4 +18,5 @@ public partial class Negocio
     public string? HoraCierre { get; set; }
 
     public string? Descripcion { get; set; }
+    public string? Foto { get; set; }
 }
