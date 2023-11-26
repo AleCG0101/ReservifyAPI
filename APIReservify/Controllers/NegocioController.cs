@@ -123,12 +123,12 @@ namespace APIReservify.Controllers
                 return BadRequest("Negocio no encontrado");
             try
             {
-                negocio.Categoria = _negocio.Categoria;
-                negocio.Nombre = _negocio.Nombre;
-                negocio.Direccion = negocio.Direccion;
-                negocio.HoraCierre = _negocio.HoraCierre;
-                negocio.HoraApertura = _negocio.HoraApertura;
-                negocio.Descripcion = _negocio.Descripcion;
+                negocio.Categoria = string.IsNullOrEmpty(_negocio.Categoria) ? negocio.Categoria : _negocio.Categoria;
+                negocio.Nombre = string.IsNullOrEmpty(_negocio.Nombre) ? negocio.Nombre : _negocio.Nombre;
+                negocio.Direccion = string.IsNullOrEmpty(_negocio.Direccion) ? negocio.Direccion : _negocio.Direccion;
+                negocio.HoraCierre = string.IsNullOrEmpty(_negocio.HoraCierre) ? negocio.HoraCierre : _negocio.HoraCierre;
+                negocio.HoraApertura = string.IsNullOrEmpty(_negocio.HoraApertura) ? negocio.HoraApertura : _negocio.HoraApertura;
+                negocio.Descripcion = string.IsNullOrEmpty(_negocio.Descripcion) ? negocio.Descripcion : _negocio.Descripcion;
                 negocio.Foto = string.IsNullOrEmpty(_negocio.Foto) ? negocio.Foto : _negocio.Foto;
 
                 _dbcontext.Negocios.Update(negocio);

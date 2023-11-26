@@ -99,10 +99,10 @@ namespace APIReservify.Controllers
                 return BadRequest("Usuario no encontrado");
             try
             {
-                usuario.Nombre = _usuario.Nombre;
-                usuario.Apellidos = _usuario.Apellidos;
-                usuario.IdNegocio = _usuario.IdNegocio;
-                usuario.Correo = _usuario.Correo;
+                usuario.Nombre = string.IsNullOrEmpty(_usuario.Nombre) ? usuario.Nombre : _usuario.Nombre;
+                usuario.Apellidos = string.IsNullOrEmpty(_usuario.Apellidos) ? usuario.Apellidos : _usuario.Apellidos;
+                usuario.IdNegocio = _usuario.IdNegocio == null || _usuario.IdNegocio == 0 ? 0 : _usuario.IdNegocio;
+                usuario.Correo = string.IsNullOrEmpty(_usuario.Correo) ? usuario.Correo : _usuario.Correo;
 
                 _dbcontext.Usuarios.Update(usuario);
                 _dbcontext.SaveChanges();
