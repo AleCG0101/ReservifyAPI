@@ -7,30 +7,30 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAqwGtIb7X7ka9KVc8bSmmkwAAAAACAAAAAAAQZgAAAAEAACAAAAAY3T1+YqP2B+7GrM7KJ9ZWgJ36zlwp70ySUXIoMEPOrgAAAAAOgAAAAAIAACAAAADMPYZUh9U1HPOZNhkCDrJawNjKNe1uLSa3iRr07bjU9CAAAACx+85zNbA+BUIBS7sA/8U0gT7CS5QOQ8k8L6nTRKSJrEAAAAAUGS7kFwqpmdXx9UA0MD9fWwXM2TF2aB2fwZfCWR6OUm4wmHdq9/w9xMtCp0TwrqXjXGIC3V2FinCt9M3zeFTx</EncryptedPassword>
     <_PublishTargetUrl>ftp://155.254.244.28/www.reservify.somee.com</_PublishTargetUrl>
-    <History>True|2023-11-13T03:28:22.4457015Z;</History>
+    <History>True|2023-11-27T04:48:45.2680645Z;True|2023-11-26T20:36:18.1780571-06:00;True|2023-11-26T18:42:18.5637432-06:00;True|2023-11-26T17:58:50.3116540-06:00;True|2023-11-12T21:28:22.4457015-06:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
     <File Include="APIReservify.deps.json">
-      <publishTime>11/12/2023 21:27:14</publishTime>
+      <publishTime>11/26/2023 22:47:29</publishTime>
     </File>
     <File Include="APIReservify.dll">
-      <publishTime>11/12/2023 21:27:03</publishTime>
+      <publishTime>11/26/2023 22:47:10</publishTime>
     </File>
     <File Include="APIReservify.exe">
-      <publishTime>11/12/2023 21:27:03</publishTime>
+      <publishTime>11/26/2023 22:47:11</publishTime>
     </File>
     <File Include="APIReservify.pdb">
-      <publishTime>11/12/2023 21:27:03</publishTime>
+      <publishTime>11/26/2023 22:47:10</publishTime>
     </File>
     <File Include="APIReservify.runtimeconfig.json">
-      <publishTime>11/12/2023 21:27:03</publishTime>
+      <publishTime>11/26/2023 22:47:11</publishTime>
     </File>
     <File Include="appsettings.Development.json">
       <publishTime>11/11/2023 20:22:30</publishTime>
     </File>
     <File Include="appsettings.json">
-      <publishTime>11/12/2023 21:21:10</publishTime>
+      <publishTime>11/26/2023 22:26:17</publishTime>
     </File>
     <File Include="AWSSDK.Core.dll">
       <publishTime>11/09/2022 10:47:34</publishTime>
@@ -46,6 +46,15 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="DnsClient.dll">
       <publishTime>06/10/2022 15:37:22</publishTime>
+    </File>
+    <File Include="firebase-config.json">
+      <publishTime>11/26/2023 22:26:25</publishTime>
+    </File>
+    <File Include="Firebase.Auth.dll">
+      <publishTime>09/07/2023 08:50:22</publishTime>
+    </File>
+    <File Include="Firebase.Storage.dll">
+      <publishTime>11/26/2018 15:49:32</publishTime>
     </File>
     <File Include="Microsoft.Bcl.AsyncInterfaces.dll">
       <publishTime>04/14/2020 17:39:12</publishTime>
@@ -136,6 +145,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="MongoDB.Libmongocrypt.dll">
       <publishTime>06/01/2023 11:28:20</publishTime>
+    </File>
+    <File Include="Newtonsoft.Json.dll">
+      <publishTime>11/23/2022 20:10:26</publishTime>
     </File>
     <File Include="runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll">
       <publishTime>10/18/2022 11:40:14</publishTime>
@@ -231,7 +243,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/22/2021 18:49:44</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>11/12/2023 21:27:14</publishTime>
+      <publishTime>11/26/2023 22:47:30</publishTime>
     </File>
     <File Include="ZstdSharp.dll">
       <publishTime>08/02/2022 14:04:30</publishTime>

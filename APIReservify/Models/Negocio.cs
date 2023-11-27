@@ -19,4 +19,5 @@ public partial class Negocio
 
     public string? Descripcion { get; set; }
     public string? Foto { get; set; }
+
 }

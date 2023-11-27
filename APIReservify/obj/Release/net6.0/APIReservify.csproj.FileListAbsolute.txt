@@ -98,3 +98,7 @@ C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\refint\
 C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\APIReservify.pdb
 C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\APIReservify.genruntimeconfig.cache
 C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\ref\APIReservify.dll
+C:\Users\aleca\source\repos\APIReservify\APIReservify\bin\Release\net6.0\firebase-config.json
+C:\Users\aleca\source\repos\APIReservify\APIReservify\bin\Release\net6.0\Firebase.Auth.dll
+C:\Users\aleca\source\repos\APIReservify\APIReservify\bin\Release\net6.0\Firebase.Storage.dll
+C:\Users\aleca\source\repos\APIReservify\APIReservify\bin\Release\net6.0\Newtonsoft.Json.dll

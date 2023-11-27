@@ -1,6 +1,7 @@
 C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\PubTmp\Out\APIReservify.exe
 C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
 C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\PubTmp\Out\firebase-config.json
 C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\PubTmp\Out\APIReservify.dll
 C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\PubTmp\Out\APIReservify.runtimeconfig.json
 C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\PubTmp\Out\APIReservify.pdb
@@ -9,6 +10,8 @@ C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\PubTmp\
 C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\PubTmp\Out\Azure.Core.dll
 C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\PubTmp\Out\Azure.Identity.dll
 C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\PubTmp\Out\DnsClient.dll
+C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\PubTmp\Out\Firebase.Auth.dll
+C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\PubTmp\Out\Firebase.Storage.dll
 C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\PubTmp\Out\Microsoft.Data.SqlClient.dll
 C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
@@ -39,6 +42,7 @@ C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\PubTmp\
 C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\PubTmp\Out\MongoDB.Driver.dll
 C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\PubTmp\Out\MongoDB.Driver.Core.dll
 C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\PubTmp\Out\MongoDB.Libmongocrypt.dll
+C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\PubTmp\Out\Newtonsoft.Json.dll
 C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\PubTmp\Out\SharpCompress.dll
 C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\PubTmp\Out\Snappier.dll
 C:\Users\aleca\source\repos\APIReservify\APIReservify\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll

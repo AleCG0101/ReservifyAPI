@@ -198,3 +198,7 @@ C:\Users\aleja\OneDrive\Documentos\GitHub\ReservifyAPI\APIReservify\obj\Debug\ne
 C:\Users\aleja\OneDrive\Documentos\GitHub\ReservifyAPI\APIReservify\obj\Debug\net6.0\APIReservify.pdb
 C:\Users\aleja\OneDrive\Documentos\GitHub\ReservifyAPI\APIReservify\obj\Debug\net6.0\APIReservify.genruntimeconfig.cache
 C:\Users\aleja\OneDrive\Documentos\GitHub\ReservifyAPI\APIReservify\obj\Debug\net6.0\ref\APIReservify.dll
+C:\Users\aleca\source\repos\APIReservify\APIReservify\bin\Debug\net6.0\Firebase.Auth.dll
+C:\Users\aleca\source\repos\APIReservify\APIReservify\bin\Debug\net6.0\Firebase.Storage.dll
+C:\Users\aleca\source\repos\APIReservify\APIReservify\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\aleca\source\repos\APIReservify\APIReservify\bin\Debug\net6.0\firebase-config.json

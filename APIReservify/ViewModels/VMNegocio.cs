@@ -21,7 +21,26 @@ namespace APIReservify.ViewModels
             public string? HoraCierre { get; set; }
 
             public string? Descripcion { get; set; }
-            public string? Foto { get; set; } 
+            public IFormFile? Foto { get; set; }
+        }
+
+        public partial class EditarNegocio
+        {
+            public int IdNegocio { get; set; }
+
+            public string? Categoria { get; set; }
+
+            public string? Nombre { get; set; }
+
+            public string? Direccion { get; set; }
+
+            public string? HoraApertura { get; set; }
+
+            public string? HoraCierre { get; set; }
+
+            public string? Descripcion { get; set; }
+            public IFormFile? Foto { get; set; }
+
         }
 
         public partial class CitasUsuario
