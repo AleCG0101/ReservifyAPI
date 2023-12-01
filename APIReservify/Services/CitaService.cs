@@ -93,6 +93,45 @@ namespace APIReservify.Services
             }
             
         }
+        public List<CitasUsuarioApp> GetCitasUsuarioApp(int id)
+        {
+            try
+            {
+                List<CitasUsuarioApp> citasUsuario = new List<CitasUsuarioApp>();
+
+                var citas = _citas.Find(cita => cita.Id_usuario == id).ToList();
+                foreach (var cita in citas)
+                {
+                    var negocio = _dbcontext.Negocios.Find(cita.Id_negocio);
+                    var citaUsuario = new CitasUsuarioApp
+                    {
+                        Id = cita.Id,
+                        Fecha = cita.Fecha,
+                        Hora = cita.Hora,
+                        Id_negocio = cita.Id_negocio,
+                        Id_usuario = cita.Id_usuario,
+
+                    };
+                    if (negocio != null)
+                    {
+                        citaUsuario.NombreNegocio = negocio.Nombre;
+                        citaUsuario.DireccionNegocio = negocio.Direccion;
+                        citaUsuario.CategoriaNegocio = negocio.Categoria;
+                        citaUsuario.Foto = negocio.Foto;
+                    }
+
+                    citasUsuario.Add(citaUsuario);
+                }
+
+                return citasUsuario;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+        }
         public Citas Get(string id)
         {
             return _citas.Find(cita => cita.Id == id).FirstOrDefault();

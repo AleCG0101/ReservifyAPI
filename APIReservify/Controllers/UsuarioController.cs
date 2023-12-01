@@ -104,7 +104,7 @@ namespace APIReservify.Controllers
                 usuario.IdNegocio = _usuario.IdNegocio == null || _usuario.IdNegocio == 0 ? 0 : _usuario.IdNegocio;
                 usuario.Correo = string.IsNullOrEmpty(_usuario.Correo) ? usuario.Correo : _usuario.Correo;
                 usuario.Telefono = string.IsNullOrEmpty(_usuario.Telefono) ? usuario.Telefono : _usuario.Telefono;
-                usuario.Pass = string.IsNullOrEmpty(_usuario.Pass) ? usuario.Pass : _usuario.Pass;
+                usuario.Pass = string.IsNullOrEmpty(_usuario.Pass) ? usuario.Pass : GetSHA256(_usuario.Pass);
 
                 _dbcontext.Usuarios.Update(usuario);
                 _dbcontext.SaveChanges();

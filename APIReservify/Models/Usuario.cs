@@ -15,7 +15,7 @@ public partial class Usuario
 
     public string Correo { get; set; } = null!;
 
-    public string Pass { get; set; } = null!;
+    public string? Pass { get; set; } = null!;
 
     public string? Telefono { get; set; }
 }

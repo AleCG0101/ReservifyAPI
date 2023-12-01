@@ -47,6 +47,21 @@ namespace APIReservify.Controllers
 
         }
 
+        [HttpGet]
+        [Route("GetCitasUsuarioApp/{id}")]
+        public ActionResult<List<CitasUsuarioApp>> GetCitasUsuarioApp(int id)
+        {
+            try
+            {
+                return citaService.GetCitasUsuarioApp(id);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status200OK, new { mensaje = ex.Message });
+            }
+
+        }
+
         // GET api/<CitasController>/5
         [HttpGet("{id}")]
         public ActionResult<Citas> Get(string id)

@@ -8,6 +8,7 @@ namespace APIReservify.Services
         List<Citas> Get();
         List<CitasNegocio> GetCitasNegocio(int id);
         List<CitasUsuario> GetCitasUsuario(int id);
+        List<CitasUsuarioApp> GetCitasUsuarioApp(int id);
         Citas Get(string id);
         Citas Create(Citas cita);
         void Update (string id, Citas cita);
